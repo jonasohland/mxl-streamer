@@ -1,0 +1,162 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1791914995,
+        "narHash": "sha256-Zf/xfQEAasnwnmEfHqW/4hjDE/s44yn2hD4RuVIZRjA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "b7a79d3fea1e214f6d668d521cecec0c01e26544",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "gst-plugins-rs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1793997773,
+        "narHash": "sha256-L6rKOS8l9UcBBbVtOTbIsonn5MeGvtAlRKqXz2X/G6g=",
+        "ref": "main",
+        "rev": "a579eba513409d6ac4e4f29479dd61074fbb73e9",
+        "revCount": 5241,
+        "type": "git",
+        "url": "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs.git"
+      },
+      "original": {
+        "ref": "main",
+        "type": "git",
+        "url": "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs.git"
+      }
+    },
+    "gst-v210-cudaconvert": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1794156781,
+        "narHash": "sha256-umBZMZN8PouvTG+x01xrEeJ/FMqt6+BV1/7gTDrz5HM=",
+        "owner": "jonasohland",
+        "repo": "gst-v210-cudaconvert",
+        "rev": "45adf448df651f3d40f7ca39a0c089f983ad7fc0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jonasohland",
+        "repo": "gst-v210-cudaconvert",
+        "type": "github"
+      }
+    },
+    "jpegxs-cuda": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1794156460,
+        "narHash": "sha256-JVd1Gn1qZwceVd2o4An5ayhOqzzsaKOkNb/jCnywghE=",
+        "ref": "refs/heads/main",
+        "rev": "0adb524e0857933eac80be2531eca20a62645d71",
+        "revCount": 135,
+        "type": "git",
+        "url": "ssh://git@ssh.bitbucket.org/riedelcommunications/jxs-cuda.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@ssh.bitbucket.org/riedelcommunications/jxs-cuda.git"
+      }
+    },
+    "mxl": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1793993882,
+        "narHash": "sha256-DFqBqD9pPSzfR6UPcIgkFwyHeFXJwPE7pBDI8btivKI=",
+        "owner": "jonasohland",
+        "repo": "mxl",
+        "rev": "3683bc2f0bb7d73c470542a42c82b65517073e50",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jonasohland",
+        "ref": "nix/main",
+        "repo": "mxl",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1793977579,
+        "narHash": "sha256-4/Yzr1fWTh/zBAR1tR84ZQ1Zhmor8AXwgD4AS7sPn60=",
+        "rev": "4fe25e12eb9f4c744966dd3de5a05246cf098601",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.11pre1109744.4fe25e12eb9f/nixexprs.tar.zst"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "gst-plugins-rs": "gst-plugins-rs",
+        "gst-v210-cudaconvert": "gst-v210-cudaconvert",
+        "jpegxs-cuda": "jpegxs-cuda",
+        "mxl": "mxl",
+        "nixpkgs": "nixpkgs"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "mxl",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1793956102,
+        "narHash": "sha256-dASUovwB3DUoTm6daga0hsNZZAFCCGlUS4FPBjK0OwA=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "74cebce67ef6671ea48fda353a5be2d229bd2920",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
